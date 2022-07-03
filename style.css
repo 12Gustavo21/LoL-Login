@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
@@ -11,7 +11,7 @@
 
 body {
     display: flex;
-    background-color: antiquewhite;
+    background-color: #f5f5f5;
 }
 
 .Principal {
@@ -19,14 +19,22 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    width: 30vw;
 }
 
 .logoPrincipal {
-    width: 15vw;
+    width: 13vw;
 }
 
 .Principal h1 {
     font-weight: 600;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .logos {
@@ -42,7 +50,9 @@ body {
     height: 6vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .Facebook {
@@ -58,21 +68,35 @@ body {
 }
 
 .logos img {
-    width: 2vw;
-    height: 5vh;
-    margin-top: 3px;
+    width: 1.5vw;
+    height: 3.5vh;
+}
+
+.check {
+    display: flex;
+    width: 100%;
+}
+
+.check input {
+    margin: 0 10px;
 }
 
 .Button {
     background-color: #FF002E;
     border-radius: 10px;
+    width: 4vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .Button img {
-    width: 5vw;
+    width: 2.5vw;
 }
 
 figure img {
-    width: 75vw;
+    width: 100%;
     height: 100vh;
 }
