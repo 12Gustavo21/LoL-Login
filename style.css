@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    background-color: antiquewhite;
+}
+
+.Principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logoPrincipal {
+    width: 15vw;
+}
+
+.Principal h1 {
+    font-weight: 600;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+}
+
+.Facebook,
+.Google,
+.Apple { 
+    width: 6vw;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.Facebook {
+    background-color: #2051FF;
+}
+
+.Google {
+    background-color: #8A0000;
+}
+
+.Apple {
+    background-color: #000000;
+}
+
+.logos img {
+    width: 2vw;
+    height: 5vh;
+    margin-top: 3px;
+}
+
+.Button {
+    background-color: #FF002E;
+    border-radius: 10px;
+}
+
+.Button img {
+    width: 5vw;
+}
+
+figure img {
+    width: 75vw;
+    height: 100vh;
+}
