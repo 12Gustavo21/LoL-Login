@@ -30,17 +30,33 @@ body {
     font-weight: 600;
 }
 
-form {
+.inputs {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs input {
+    background-color: #E8E6E6;
+    border: none;
+    width: 20vw;
+    height: 8vh;
+}
+
+input[type="text"] {
+    margin: 10px 0;
 }
 
 .logos {
     display: flex;
     justify-content: space-around;
     width: 95%;
+    margin: -3vw;
 }
 
 .Facebook,
@@ -81,15 +97,24 @@ form {
     margin: 0 10px;
 }
 
+.final,
+.fimTexts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .Button {
     background-color: #FF002E;
+    opacity: .3;
     border-radius: 10px;
     width: 4vw;
     height: 8vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    cursor: no-drop;
 }
 
 .Button img {
