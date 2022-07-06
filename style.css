@@ -54,7 +54,7 @@ form {
     background-color: #E8E6E6;
     border: none;
     width: 22vw;
-    height: 10vh;
+    height: 9vh;
     padding-left: 10px;
 }
 
@@ -62,13 +62,23 @@ input[type="text"] {
     margin: 10px 0;
 }
 
+label {
+    position: absolute;
+    top: 215px;
+    left: 45px;
+    font-size: .8em;
+    color: #a0a0a0;
+}
+
+.Label_senha {
+    top: 280px;
+}
+
 .logos {
     display: flex;
     justify-content: space-between;
     width: 95%;
     flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
     align-items: center;
     margin-bottom: 10px;
 }
@@ -83,6 +93,13 @@ input[type="text"] {
     align-items: center;
     border-radius: 5px;
     cursor: pointer;
+    transition: 1s all;
+}
+
+.Facebook:hover,
+.Google:hover,
+.Apple:hover {
+    transform: scale(.9);
 }
 
 .Facebook {
@@ -108,11 +125,39 @@ input[type="text"] {
     width: 100%;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
 }
 
 .check input {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 17px;
+    width: 17px;
+    background-color: #c2c2c2;
+    border-radius: 4px;
     margin: 0 10px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s all;
+}
+
+.check input::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    font-size: .9em;
+    color: #ffff;
+    display: none;
+}
+
+.check input:checked {
+    background-color: #FF002E;
+}
+
+.check input:checked::after{
+    display: block;
 }
 
 .check p {
@@ -157,6 +202,11 @@ input[type="text"] {
 .botão1 {
     opacity: 1;
     cursor: pointer;
+}
+
+.botão1:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #8A0000;
 }
 
 .Button img {
