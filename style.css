@@ -205,8 +205,8 @@ label {
 }
 
 .botão1:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px #8A0000;
+    transform: scale(.9);
+    box-shadow: 1px 10px 10px #8A0000;
 }
 
 .Button img {
