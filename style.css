@@ -26,14 +26,23 @@ body {
     width: 13vw;
 }
 
+.Pag_login {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .Principal h1 {
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .inputs {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 15px;
 }
 
 form {
@@ -44,8 +53,9 @@ form {
 .inputs input {
     background-color: #E8E6E6;
     border: none;
-    width: 20vw;
-    height: 8vh;
+    width: 22vw;
+    height: 10vh;
+    padding-left: 10px;
 }
 
 input[type="text"] {
@@ -54,14 +64,18 @@ input[type="text"] {
 
 .logos {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 95%;
-    margin: -3vw;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .Facebook,
 .Google,
-.Apple { 
+.Apple {
     width: 6vw;
     height: 6vh;
     display: flex;
@@ -77,6 +91,7 @@ input[type="text"] {
 
 .Google {
     background-color: #8A0000;
+    margin: 0 30px;
 }
 
 .Apple {
@@ -91,10 +106,17 @@ input[type="text"] {
 .check {
     display: flex;
     width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .check input {
     margin: 0 10px;
+    cursor: pointer;
+}
+
+.check p {
+    font-weight: bold;
 }
 
 .final,
@@ -103,22 +125,46 @@ input[type="text"] {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    color: #a0a0a0;
+    width: 100%;
+}
+
+.fimTexts p {
+    cursor: pointer;
+    transition: .5s all;
+    font-size: .9em;
+}
+
+.fimTexts p:hover {
+    transform: scale(1.01);
+    color: #FF002E;
+    font-weight: bold;
 }
 
 .Button {
     background-color: #FF002E;
     opacity: .3;
     border-radius: 10px;
-    width: 4vw;
-    height: 8vh;
+    width: 3.5vw;
+    height: 7.5vh;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: no-drop;
+    transition: ease-in-out .5s all;
+}
+
+.botão1 {
+    opacity: 1;
+    cursor: pointer;
 }
 
 .Button img {
-    width: 2.5vw;
+    width: 2.2vw;
+}
+
+.textFim {
+    margin: 10px 0;
 }
 
 figure img {
